@@ -1,0 +1,41 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+  }
+  .warper{
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+  .warper div{
+    display: flex;
+    border: 2px dotted greenyellow;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  
+  }
+  .box1{
+    animation: strobe 2s infinite;
+  }
+  .box2{
+    animation: strobe 1.5s infinite;
+  }
+  .box3{
+    animation: strobe 8.5s infinite;
+  }
+  .box4{
+    animation: strobe 0.25s infinite; 
+  }
+  .box5{
+    animation: strobe 0.125s infinite;
+  }
+
+@keyframes strobe {
+  50%{
+    background:black;
+    color: white;
+  }
+}
